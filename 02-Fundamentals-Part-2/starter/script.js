@@ -470,6 +470,7 @@ for (let i = 0; i < blessing.length; i++) {
 
 //LOOPING BACKWARDS AND LOOPS IN LOOPS
 
+/*
 const blessing = [
     'Blessing',
     'James',
@@ -484,5 +485,71 @@ const blessing = [
 for (let i = blessing.length - 1; i >= 0; i--) {
     console.log(i, blessing[i]);
 }
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-------- Starting exercise ${exercise}`);
+
+        for (let rep = 1; rep <= 6; rep++) {
+            console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+        }
+}
+*/
+
+//THE WHILE LOOP
+/*
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+let rep = 1;
+while (rep <= 10) {
+ console.log(`WHILE: Lifting weights repetition ${rep}`);
+ rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
+}//for loop is better for this kind of situation(when looping over an array)
+*/
+
+
+//CODING CHALLENGE 4
+
+/*
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 :
+        bill * 0.2;
+}
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+
+console.log(bills, tips, totals);
+
+
+const calcAverage = function (arr) {// function expression
+    let = sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i];
+        sum += arr[i];
+    }
+    console.log(sum);
+    return sum / arr.length;
+}
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
+*/
+
 
 
